@@ -1,0 +1,54 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 23px;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  box-shadow: black;
+}
+article {
+  flex-basis: 150px;
+  flex-basis: 45%;
+  min-width: 250px;
+  border: 3px solid rgb(51, 51, 39);
+  border-radius: 10px;
+  margin: 4px;
+  font-family: "Irish Grover", cursive;
+  box-shadow: 0 0 100px rgba(248, 3, 3, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  /* transition: box-shadow 2s, background-color 1s, color 0.5s; */
+  transition: all 1s ease-out;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  margin: 10px;
+}
+a {
+  margin: 10px;
+}
+article img {
+  object-fit: cover;
+}
+div {
+  order: -1px;
+  padding: 15px;
+}
+article:nth-child(odd) {
+  flex-direction: row;
+}
+article:hover {
+  background-color: red;
+  box-shadow: 0 0 90px rgb(5, 11, 63);
+  color: yellow;
+}
+article:active {
+  box-shadow: rgb(0, 0, 0);
+}
